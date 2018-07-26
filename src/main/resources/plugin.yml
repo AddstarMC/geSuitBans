@@ -1,8 +1,9 @@
 name: geSuitBans
 main : net.cubespace.geSuitBans.geSuitBans
 version: ${project.version}b-${build.number}
+api-version: ${spigot.api.verison}
 description: Part of the geSuit this plugin allows moderators to ban and kick players
-author: geNAZt
+author: narimm
 commands:
     ban:
         description: Bans a player from the proxy

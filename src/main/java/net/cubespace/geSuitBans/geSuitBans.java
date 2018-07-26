@@ -5,6 +5,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class geSuitBans extends JavaPlugin {
     public static geSuitBans instance;
+    public static String CHANNEL_NAME = "bungeecord:geSuitBans";
 
     @Override
     public void onEnable() {
@@ -36,6 +37,6 @@ public class geSuitBans extends JavaPlugin {
     }
 
     private void registerChannels() {
-        this.getServer().getMessenger().registerOutgoingPluginChannel( this, "geSuitBans" );
+        this.getServer().getMessenger().registerOutgoingPluginChannel(this, CHANNEL_NAME);
     }
 }

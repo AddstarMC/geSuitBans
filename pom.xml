@@ -4,7 +4,7 @@
 
     <groupId>net.cubespace</groupId>
     <artifactId>geSuitBans</artifactId>
-    <version>0.3.2-SNAPSHOT</version>
+    <version>0.3.1-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>geSuitBans</name>
 
@@ -12,6 +12,8 @@
         <build.number/>
         <plugin.version>${project.version}-${build.number}</plugin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spigot.version>${spigot.api.verison}-R0.1-SNAPSHOT</spigot.version>
+        <spigot.api.verison>1.13</spigot.api.verison>
     </properties>
     <scm>
         <connection>scm:git:git@github.com:AddstarMC/geSuitBans.git</connection>
@@ -46,12 +48,8 @@
 
     <repositories>
         <repository>
-            <id>bukkit-repo</id>
-            <url>http://repo.bukkit.org/content/groups/public</url>
-        </repository>
-        <repository>
           <id>addstar-snapshot-repo</id>
-          <url>http://maven.addstar.com.au/artifactory/ext-snapshot-local</url>
+            <url>http://maven.addstar.com.au/artifactory/all-snapshots</url>
           <snapshots>
           	<enabled>true</enabled>
           </snapshots>
@@ -65,7 +63,7 @@
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.12-R0.1-SNAPSHOT</version>
+            <version>${spigot.version}</version>
         </dependency>
     </dependencies>
     <build>
