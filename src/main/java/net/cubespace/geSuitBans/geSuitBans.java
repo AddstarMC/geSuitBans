@@ -5,7 +5,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class geSuitBans extends JavaPlugin {
     public static geSuitBans instance;
-    public static String CHANNEL_NAME = "bungeecord:geSuitBans";
+    public static String CHANNEL_NAME = "bungeecord:gesuitbans";
 
     @Override
     public void onEnable() {
