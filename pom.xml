@@ -12,7 +12,7 @@
         <build.number/>
         <plugin.version>${project.version}-${build.number}</plugin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <spigot.version>${spigot.api.verison}-R0.1-SNAPSHOT</spigot.version>
+        <spigot.version>1.13-R0.1-SNAPSHOT</spigot.version>
         <spigot.api.verison>1.13</spigot.api.verison>
     </properties>
     <scm>
@@ -64,6 +64,7 @@
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
             <version>${spigot.version}</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
     <build>

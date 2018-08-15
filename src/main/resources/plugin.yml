@@ -119,7 +119,11 @@ commands:
         permission: gesuit.bans.command.namehistory
         permission-message: §cYou do not have permission for this command
         usage: /<command> (player)
-
+    newspawn:
+        description: Forces a player to the new spawn
+        permission: gesuit.bans.command.newspawn
+        permission-message: §cYou do not have permission for this command
+        usage: /<command> (player)
 permissions:
     gesuit.bans.*:
         description: Gives access to all bans commands
